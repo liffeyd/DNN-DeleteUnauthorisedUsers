@@ -1,0 +1,47 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DNN.DeleteUnauthorisedUsers" type="Module" version="00.00.01">
+      <friendlyName>DNN.DeleteUnauthorisedUsers</friendlyName>
+      <description>DNN Delete Unauthorised Users on a schedued task</description>
+      <iconFile></iconFile>
+      <owner>
+        <name>Declan Ward</name>
+        <organization>dws.ie</organization>
+        <url>http://www.declanward.com</url>
+        <email>dnn@dws.ie</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.03.04</dependency>
+      </dependencies>
+      
+      <components>
+        <component type="Script">
+          <scripts>
+            <basePath>admin\Delete Unauthorised Users</basePath>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>00.00.01.SqlDataProvider</name>
+              <version>00.00.01</version>
+            </script>
+            <script type="UnInstall">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>00.00.01</version>
+            </script>
+          </scripts>
+        </component>
+
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>DNN-DeleteUnauthorisedUsers.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
