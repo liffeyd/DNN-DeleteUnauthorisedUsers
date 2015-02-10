@@ -17,5 +17,5 @@
 DELETE FROM {databaseOwner}[{objectQualifier}Schedule] WHERE [TypeFullName]='DNN.DeleteUnauthorisedUsers.DeleteUnauthorisedUsers'
 GO
 
-DROP PROCEDURE {databaseOwner}.[{objectQualifier}DeleteUnauthorisedUsers]
+DROP PROCEDURE {databaseOwner}[{objectQualifier}DeleteUnauthorisedUsers]
 GO

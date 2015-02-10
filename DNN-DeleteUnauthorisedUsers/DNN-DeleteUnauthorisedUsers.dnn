@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="DNN.DeleteUnauthorisedUsers" type="Module" version="00.00.01">
+    <package name="DNN.DeleteUnauthorisedUsers" type="Library" version="00.00.02">
       <friendlyName>DNN.DeleteUnauthorisedUsers</friendlyName>
       <description>DNN Delete Unauthorised Users on a schedued task</description>
       <iconFile></iconFile>
@@ -22,13 +22,13 @@
             <basePath>admin\Delete Unauthorised Users</basePath>
             <script type="Install">
               <path>Providers\DataProviders\SqlDataProvider</path>
-              <name>00.00.01.SqlDataProvider</name>
-              <version>00.00.01</version>
+              <name>00.00.02.SqlDataProvider</name>
+              <version>00.00.02</version>
             </script>
             <script type="UnInstall">
               <path>Providers\DataProviders\SqlDataProvider</path>
               <name>Uninstall.SqlDataProvider</name>
-              <version>00.00.01</version>
+              <version>00.00.02</version>
             </script>
           </scripts>
         </component>
@@ -36,7 +36,7 @@
         <component type="Assembly">
           <assemblies>
             <assembly>
-              <name>DNN-DeleteUnauthorisedUsers.dll</name>
+              <name>DNN.DeleteUnauthorisedUsers.dll</name>
               <path>bin</path>
             </assembly>
           </assemblies>

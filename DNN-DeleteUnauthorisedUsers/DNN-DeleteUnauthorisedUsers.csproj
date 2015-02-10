@@ -61,9 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DNN-DeleteAuthorisedUsers.dnn" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="DNN-DeleteUnauthorisedUsers.dnn" />
     <None Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
     <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
   </ItemGroup>

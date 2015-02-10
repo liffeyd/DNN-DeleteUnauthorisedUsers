@@ -13,13 +13,13 @@
 /************************************************************/
 /*****              SqlDataProvider                     *****/
 /************************************************************/
+if exists (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'{databaseOwner}[{objectQualifier}DeleteUnauthorisedUsers]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}DeleteUnauthorisedUsers
+GO
 
-/****** Object:  StoredProcedure {databaseOwner}.[{objectQualifier}DeleteUnauthorisedUsers]    Script Date: 10/02/2015 09:44:13 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE PROCEDURE {databaseOwner}.[{objectQualifier}DeleteUnauthorisedUsers]
+
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}DeleteUnauthorisedUsers]
 	
 AS
 
@@ -41,7 +41,6 @@ GO
 /* Add to scheduler */
 INSERT INTO {databaseOwner}[{objectQualifier}Schedule] (
 	[TypeFullName],
-	[FriendlyName], 
 	[TimeLapse], 
 	[TimeLapseMeasurement], 
 	[RetryTimeLapse], 
@@ -59,7 +58,6 @@ INSERT INTO {databaseOwner}[{objectQualifier}Schedule] (
 	[FriendlyName]) 
 VALUES (
 	'DNN.DeleteUnauthorisedUsers.DeleteUnauthorisedUsers',
-	'Delete Unauthorised Users', 
 	1, 
 	'h', 
 	30, 
@@ -74,5 +72,5 @@ VALUES (
 	NULL, 
 	NULL, 
 	NULL, 
-	N'Purge Client Dependency Files')
+	N'Delete Unauthorised Users')
 GO
