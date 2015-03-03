@@ -1,0 +1,49 @@
+﻿<h3>Delete Unauthorised DNN Users</h3>
+<p class="Contributor">
+	declanward.com <br />
+	<a href="mailto:dnn@dws.ie">dnn@dws.ie</a><br />
+	<a href=http://www.dws.ie>http://www.dws.ie</a>
+</p>
+<hr/>
+<div class="License">
+	<h3>About  DNN-DeleteUnauthorisedUsers</h3>
+	<p class="Owner">
+		<b>Version 00.00.02</b>
+	</p>
+	<p>The purpose of this class is to allow for the automatic deletion of unauthorised users. The package will run as a Scheduler task.</p>
+	<h4>Changes</h4>
+	<p>Re-written to to make use of services API and built in functions of DNN. Stored procedures are no longer used to soft delete users.</p>
+	<p>The module now includes an option to remove (purge) deleted users.</p>
+	<p>Four portal settings are now used:</p>
+	<ul>
+		<li>AutoDeleteUsers; default value "false"</li>
+		<li>AutoDeleteUsersTimeSpan; default value "60"</li>
+		<li>AutoPurgeUsers; default value  "false"</li>
+		<li>AutoPurgeUsersTimeSpan; default value  "30"</li>
+	</ul>
+	<p>To test the service:</p>
+	<p>Browse to http://<DOMAIN-NAME>/DesktopModules/DNN-DeleteUnauthorisedUsers/dwsDeleteUsersServices/API/DeleteUsers/HelloWorld</p>
+	<p>To add default settings to the portal settings table for each portal in your DNN instance:</p>
+	<p>Browse to http://<DOMAIN-NAME>/DesktopModules/DNN-DeleteUnauthorisedUsers/dwsDeleteUsersServices/API/DeleteUsers/AddSettings</p>
+	
+	<p class="Owner">
+		<b>Version 00.00.01</b>
+	</p>
+	<h3>Bug Fixes</h3>
+	<ul>
+		<li>Sort list of portals on PortalID</li>
+	</ul>
+
+
+	<p class="Owner">
+		<b>Version 00.00.01</b>
+	</p>
+	<p>Initial release</p>
+	<p>The purpose of this class is to allow for the automatic deletion of unauthorised users. The package will run as a Scheduler task.</p>
+	
+	<h4>Bug Fixes</h4>
+	<ul>
+			<li>None</li>
+	</ul>
+	
+</div>

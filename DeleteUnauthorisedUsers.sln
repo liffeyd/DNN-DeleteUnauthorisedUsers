@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNN-DeleteUnauthorisedUsers", "DNN-DeleteUnauthorisedUsers\DNN-DeleteUnauthorisedUsers.csproj", "{922C1E84-6DAE-4FC6-8497-6B2FF3418157}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNN-DeleteUnauthorisedUsers", "DNN-DeleteUnauthorisedUsers.csproj", "{922C1E84-6DAE-4FC6-8497-6B2FF3418157}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

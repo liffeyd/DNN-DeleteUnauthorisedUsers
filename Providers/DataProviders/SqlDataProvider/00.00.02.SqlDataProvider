@@ -1,0 +1,71 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+/*
+ task no longer uses a stored procedure to delete users. Instead it calls DNN to do so.
+*/
+if exists (SELECT * FROM dbo.sysobjects 
+WHERE id = object_id(N'{databaseOwner}[{objectQualifier}DeleteUnauthorisedUsers]') 
+and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}DeleteUnauthorisedUsers
+GO
+
+
+
+
+
+/* 
+	Add to scheduler task if none already exists
+*/
+DECLARE @rowcount int
+select @rowcount = (SELECT count(1) FROM {databaseOwner}[{objectQualifier}Schedule] 
+WHERE TypeFullName = 'DNN.DeleteUnauthorisedUsers.DeleteUnauthorisedUsers')
+if (@rowcount = 0)
+INSERT INTO {databaseOwner}[{objectQualifier}Schedule] (
+	[TypeFullName],
+	[TimeLapse], 
+	[TimeLapseMeasurement], 
+	[RetryTimeLapse], 
+	[RetryTimeLapseMeasurement], 
+	[RetainHistoryNum], 
+	[AttachToEvent], 
+	[CatchUpEnabled], 
+	[Enabled], 
+	[ObjectDependencies], 
+	[Servers], 
+	[CreatedByUserID], 
+	[CreatedOnDate], 
+	[LastModifiedByUserID], 
+	[LastModifiedOnDate], 
+	[FriendlyName]) 
+VALUES (
+	'DNN.DeleteUnauthorisedUsers.DeleteUnauthorisedUsers',
+	1, 
+	'h', 
+	30, 
+	'm', 
+	50, 
+	'', 
+	0, 
+	1, 
+	'', 
+	NULL, 
+	NULL, 
+	NULL, 
+	NULL, 
+	NULL, 
+	N'dws Delete Unauthorised Users')
+GO

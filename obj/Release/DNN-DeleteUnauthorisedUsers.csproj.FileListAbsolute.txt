@@ -1,0 +1,17 @@
+F:\DNN Sites\dnndev.me\bin\DNN.DeleteUnauthorisedUsers.dll
+F:\DNN Sites\dnndev.me\bin\DNN.DeleteUnauthorisedUsers.pdb
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\DNN-DeleteUnauthorisedUsers\obj\Release\DNN.DeleteUnauthorisedUsers.dll
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\DNN-DeleteUnauthorisedUsers\obj\Release\DNN.DeleteUnauthorisedUsers.pdb
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\DNN-DeleteUnauthorisedUsers\obj\Release\DNN-DeleteUnauthorisedUsers.csprojResolveAssemblyReference.cache
+F:\DNN Sites\dnn-gitHub\Dnn.Platform\Website\bin\DNN.DeleteUnauthorisedUsers.dll
+F:\DNN Sites\dnn-gitHub\Dnn.Platform\Website\bin\DNN.DeleteUnauthorisedUsers.pdb
+F:\DNN Sites\dnn-gitHub\Dnn.Platform\Website\DesktopModules\DNN-DeleteUnauthorisedUsers\DNN-DeleteUnauthorisedUsers\obj\Release\DNN-DeleteUnauthorisedUsers.csprojResolveAssemblyReference.cache
+F:\DNN Sites\dnn-gitHub\Dnn.Platform\Website\DesktopModules\DNN-DeleteUnauthorisedUsers\DNN-DeleteUnauthorisedUsers\obj\Release\DNN.DeleteUnauthorisedUsers.dll
+F:\DNN Sites\dnn-gitHub\Dnn.Platform\Website\DesktopModules\DNN-DeleteUnauthorisedUsers\DNN-DeleteUnauthorisedUsers\obj\Release\DNN.DeleteUnauthorisedUsers.pdb
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\obj\Release\DNN.DeleteUnauthorisedUsers.App_LocalResources.Strings.resources
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\obj\Release\DNN-DeleteUnauthorisedUsers.csproj.GenerateResource.Cache
+F:\DNN Sites\bin\DNN.DeleteUnauthorisedUsers.dll
+F:\DNN Sites\bin\DNN.DeleteUnauthorisedUsers.pdb
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\obj\Release\DNN.DeleteUnauthorisedUsers.dll
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\obj\Release\DNN.DeleteUnauthorisedUsers.pdb
+F:\DNN Sites\dnndev.me\DesktopModules\DNN-DeleteUnauthorisedUsers\obj\Release\DNN-DeleteUnauthorisedUsers.csprojResolveAssemblyReference.cache

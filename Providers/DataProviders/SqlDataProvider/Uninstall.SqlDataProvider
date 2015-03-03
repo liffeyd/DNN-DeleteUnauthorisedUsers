@@ -1,0 +1,29 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+/*
+	Remove schedule item
+*/
+DELETE FROM {databaseOwner}[{objectQualifier}Schedule] WHERE [TypeFullName]='DNN.DeleteUnauthorisedUsers.DeleteUnauthorisedUsers'
+GO
+
+
+/*
+	Delete stored procedure if it exists from a previous version.
+*/
+if exists (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'{databaseOwner}[{objectQualifier}DeleteUnauthorisedUsers]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}DeleteUnauthorisedUsers
+GO
