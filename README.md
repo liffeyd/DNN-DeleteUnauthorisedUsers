@@ -7,5 +7,5 @@ On installation a .dll is placed in the bin folder and a schedule item is added 
 
 As this is not a Desktop module I chose to place its home folder in  "\admin\Delete Unauthorised Users". I am not sure if this is acceptable but this can easily be changed.
 
-March 3rd 2015
+<h2>March 3rd 2015</h2>
 This module now offers an option to remove deleted users.
